@@ -1,1 +1,1 @@
-Initial readme
+This is my first personally created blog :) 
