@@ -1,0 +1,75 @@
+.page{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 10vh 1fr;
+    grid-template-areas:
+            "header header header"
+            "menu menu menu"
+            "content content content";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+
+
+}
+
+.header{
+    background-color: #C8553D;
+    grid-area: header;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    grid-area: menu;
+    color: #C8553D;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+
+.item {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+
+}
+.content{
+    display: flex;
+    grid-area: content;
+    flex-direction: column;
+
+}
+.article {
+    display: grid;
+    grid-template-columns: 200px 20% 40%;
+    grid-template-rows: 100px 60px;
+    grid-template-areas:
+            "image title title"
+            "image description description";
+    padding: 8px;
+
+}
+
+.title {
+    grid-area: title;
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+.image{
+    grid-area: image;
+    background: url("https://media.giphy.com/media/8dYmJ6Buo3lYY/giphy.gif");
+}
+
+.description{
+    grid-area: description;
+    padding: 8px;
+}
+
+space{
+    grid-area: white;
+}
